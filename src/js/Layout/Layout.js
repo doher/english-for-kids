@@ -15,6 +15,7 @@ class Layout {
   addToBody(element, content) {
     const block = document.createElement(element);
 
+    block.classList.add(element);
     block.append(this.wrapContent(content));
     document.body.append(block);
   }
