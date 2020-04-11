@@ -13,11 +13,17 @@ class Layout {
   }
 
   addToBody(element, content) {
-    const block = document.createElement(element);
+    const selector = document.querySelector(`${element} .wrapper`);
 
-    block.classList.add(element);
-    block.append(this.wrapContent(content));
-    document.body.append(block);
+    if (selector) {
+      selector.append(content);
+    } else {
+      const block = document.createElement(element);
+
+      block.classList.add(element);
+      block.append(this.wrapContent(content));
+      document.body.append(block);
+    }
   }
 }
 
