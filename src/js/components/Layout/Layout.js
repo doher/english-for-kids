@@ -22,6 +22,7 @@ class Layout {
 
       block.classList.add(element);
       block.append(this.wrapContent(content));
+      block.firstChild.classList.add(`${element}__wrapper`);
       document.body.append(block);
     }
   }

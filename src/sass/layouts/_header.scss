@@ -1,10 +1,13 @@
 .header {
-  font-family     : 'Roboto Condensed', sans-serif;
-  display         : flex;
-  justify-content : flex-end;
-  align-items     : center;
-  text-align      : center;
-  height          : 100%;
-  color           : #eceff1;
   background-image: radial-gradient(lighten(#263238, 20%), #263238);
+}
+
+.header__wrapper {
+  font-family    : 'Roboto Condensed', sans-serif;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  text-align     : center;
+  height         : 100%;
+  color          : #eceff1;
 }
