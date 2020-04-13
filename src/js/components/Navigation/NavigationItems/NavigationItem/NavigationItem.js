@@ -1,5 +1,5 @@
 const navigationItem = (link) => {
-  const item = `<a class="link-item" href="#">${link}</a>`;
+  const item = `<li><a class="menu__item" href="#">${link}</a></li>`;
 
   return item;
 };

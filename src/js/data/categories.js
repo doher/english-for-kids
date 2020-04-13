@@ -1,7 +1,7 @@
 const cards = [
   {
     title: 'Action (set A)',
-    image: './src/assets/images/dive.jpg',
+    image: './src/assets/images/action-set-a.jpg',
     setOfWords: [
       {
         word: 'cry',
@@ -55,7 +55,7 @@ const cards = [
   },
   {
     title: 'Action (set B)',
-    image: './src/assets/images/play.jpg',
+    image: './src/assets/images/action-set-b.jpg',
     setOfWords: [
       {
         word: 'open',
@@ -109,7 +109,7 @@ const cards = [
   },
   {
     title: 'Animal (set A)',
-    image: './src/assets/images/cat.jpg',
+    image: './src/assets/images/animal-set-a.jpg',
     setOfWords: [
       {
         word: 'cat',
@@ -163,7 +163,7 @@ const cards = [
   },
   {
     title: 'Animal (set B)',
-    image: './src/assets/images/giraffe.jpg',
+    image: './src/assets/images/animal-set-b.jpg',
     setOfWords: [
       {
         word: 'bird',
@@ -217,7 +217,7 @@ const cards = [
   },
   {
     title: 'Clothes',
-    image: './src/assets/images/skirt.jpg',
+    image: './src/assets/images/clothes.jpg',
     setOfWords: [
       {
         word: 'skirt',
@@ -271,7 +271,115 @@ const cards = [
   },
   {
     title: 'Emotions',
-    image: './src/assets/images/happy.jpg',
+    image: './src/assets/images/emotions.jpg',
+    setOfWords: [
+      {
+        word: 'sad',
+        translation: 'грустный',
+        image: './src/assets/images/sad.jpg',
+        audioSrc: 'audio/sad.mp3',
+      },
+      {
+        word: 'angry',
+        translation: 'сердитый',
+        image: './src/assets/images/angry.jpg',
+        audioSrc: 'audio/angry.mp3',
+      },
+      {
+        word: 'happy',
+        translation: 'счастливый',
+        image: './src/assets/images/happy.jpg',
+        audioSrc: 'audio/happy.mp3',
+      },
+      {
+        word: 'tired',
+        translation: 'уставший',
+        image: './src/assets/images/tired.jpg',
+        audioSrc: 'audio/tired.mp3',
+      },
+      {
+        word: 'surprised',
+        translation: 'удивлённый',
+        image: './src/assets/images/surprised.jpg',
+        audioSrc: 'audio/surprised.mp3',
+      },
+      {
+        word: 'scared',
+        translation: 'испуганный',
+        image: './src/assets/images/scared.jpg',
+        audioSrc: 'audio/scared.mp3',
+      },
+      {
+        word: 'smile',
+        translation: 'улыбка',
+        image: './src/assets/images/smile.jpg',
+        audioSrc: 'audio/smile.mp3',
+      },
+      {
+        word: 'laugh',
+        translation: 'смех',
+        image: './src/assets/images/laugh.jpg',
+        audioSrc: 'audio/laugh.mp3',
+      },
+    ],
+  },
+  {
+    title: 'Vegetables',
+    image: './src/assets/images/vegetables.jpg',
+    setOfWords: [
+      {
+        word: 'sad',
+        translation: 'грустный',
+        image: './src/assets/images/sad.jpg',
+        audioSrc: 'audio/sad.mp3',
+      },
+      {
+        word: 'angry',
+        translation: 'сердитый',
+        image: './src/assets/images/angry.jpg',
+        audioSrc: 'audio/angry.mp3',
+      },
+      {
+        word: 'happy',
+        translation: 'счастливый',
+        image: './src/assets/images/happy.jpg',
+        audioSrc: 'audio/happy.mp3',
+      },
+      {
+        word: 'tired',
+        translation: 'уставший',
+        image: './src/assets/images/tired.jpg',
+        audioSrc: 'audio/tired.mp3',
+      },
+      {
+        word: 'surprised',
+        translation: 'удивлённый',
+        image: './src/assets/images/surprised.jpg',
+        audioSrc: 'audio/surprised.mp3',
+      },
+      {
+        word: 'scared',
+        translation: 'испуганный',
+        image: './src/assets/images/scared.jpg',
+        audioSrc: 'audio/scared.mp3',
+      },
+      {
+        word: 'smile',
+        translation: 'улыбка',
+        image: './src/assets/images/smile.jpg',
+        audioSrc: 'audio/smile.mp3',
+      },
+      {
+        word: 'laugh',
+        translation: 'смех',
+        image: './src/assets/images/laugh.jpg',
+        audioSrc: 'audio/laugh.mp3',
+      },
+    ],
+  },
+  {
+    title: 'Fruits',
+    image: './src/assets/images/fruits.jpg',
     setOfWords: [
       {
         word: 'sad',

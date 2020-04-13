@@ -1,12 +1,12 @@
 import Layout from './js/components/Layout/Layout';
-import CardsMenu from './js/components/CardsMenu/CardsMenu';
+import Categories from './js/components/Categories/Categories';
 import ToggleSwitch from './js/components/UI/ToggleSwitch/ToggleSwitch';
 import Hamburger from './js/components/UI/Hamburger/Hamburger';
 import categories from './js/data/categories';
 import './sass/style.scss';
 
 const layout = new Layout();
-const cardsMenu = new CardsMenu(categories);
+const cardsMenu = new Categories(categories);
 
 document.addEventListener('DOMContentLoaded', () => {
   layout.addToBody('header', Hamburger());
@@ -26,5 +26,11 @@ document.addEventListener('click', (event) => {
     setTimeout(() => {
       element.classList.remove('toggle_moving');
     }, 200);
+  }
+
+  if (element.classList.contains('menu__btn') || element.classList.contains('menu__line')) {
+    const menu = document.getElementById('menu__toggle');
+
+    menu.checked = !menu.checked;
   }
 });
