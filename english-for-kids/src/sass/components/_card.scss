@@ -1,0 +1,67 @@
+.card-container {
+  perspective: 1000;
+  margin     : 20px 25px;
+  cursor     : pointer;
+}
+
+.card-container:hover .card,
+.card-container.hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-container,
+.front,
+.back {
+  width        : 300px;
+  height       : 300px;
+  border-radius: 40px;
+}
+
+.card {
+  transition     : 0.8s;
+  transform-style: preserve-3d;
+  position       : relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  box-shadow         : 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  position           : absolute;
+  top                : 0;
+  left               : 0;
+}
+
+.front .card__image,
+.back .card__image {
+  width        : inherit;
+  height       : inherit;
+  border-radius: 40px;
+}
+
+.front .card__image img,
+.back .card__image img {
+  width        : inherit;
+  height       : inherit;
+  border-radius: 40px;
+  object-fit   : cover;
+}
+
+.front .card__title,
+.back .card__title {
+  text-align   : center;
+  border-radius: 0px 0px 40px 40px;
+  font-family  : sans-serif;
+  font-weight  : bold;
+  font-size    : 30px;
+  margin-top   : -80px;
+  height       : 40px;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}

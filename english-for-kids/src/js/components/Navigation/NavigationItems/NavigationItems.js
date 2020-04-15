@@ -1,12 +1,12 @@
 import navigationItem from './NavigationItem/NavigationItem';
-import categories from '../../../data/categories';
+import dataset from '../../../data/dataset';
 
 const navigationItems = () => {
   const listMenu = document.createElement('ul');
 
   listMenu.classList.add('menu__box');
 
-  const links = categories.map((category) => {
+  const links = dataset.map((category) => {
     const { title } = category;
 
     return navigationItem(title);

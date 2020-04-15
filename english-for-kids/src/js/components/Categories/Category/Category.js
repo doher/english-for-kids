@@ -1,23 +1,23 @@
-class Card {
+class Category {
   constructor(image, title) {
     this.image = image;
     this.title = title;
   }
 
   render() {
-    const card = `
-      <div class="card">
-        <div class="card__image">
+    const category = `
+      <div class="category">
+        <div class="category__image">
           <img src="${this.image}" alt="${this.title}"/>
         </div>
-        <div class="card__title">
+        <div class="category__title">
           <p>${this.title}</p>
         </div>
       </div>
     `;
 
-    return card;
+    return category;
   }
 }
 
-export default Card;
+export default Category;
